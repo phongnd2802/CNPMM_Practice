@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+  max-width: 100%;
+  padding: 0 20px;   /* trái/phải 10px */
+}
+
+.product-card .product-img {
+  width: 100%;
+  height: auto;        /* khung cao đúng theo ảnh */
+  object-fit: contain; /* không cắt ảnh */
+  display: block;
+}
+
+.product-card .product-title {
+  margin-top: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-prices {
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.product-prices .price-normal,
+.product-prices .price-discount {
+  font-weight: 700;
+}
+.product-prices .price-original {
+  color: rgba(0,0,0,0.45);
+  text-decoration: line-through;
+}
+
+.product-views {
+  margin-top: 6px;
+  color: rgba(0,0,0,0.45);
+  font-size: 13px;
+}
+
+
